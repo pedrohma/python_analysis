@@ -13,12 +13,3 @@ with open('dataset.csv') as csv_file:
             line_count += 1
     stop = timeit.default_timer()
     print(f'Processed {line_count} lines in {stop - start } seconds.')
-
-# import sys
-#
-# for line in sys.stdin:
-#     line = line.strip()
-#     unpacked = line.split(",")
-#     stadium, capacity, expanded, location, surface, turf, team, opened, weather, roof, elevation = line.split(",")
-#     results = [turf, "1"]
-#     print("\t".join(results))
